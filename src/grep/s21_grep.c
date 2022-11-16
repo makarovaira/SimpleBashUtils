@@ -41,7 +41,7 @@ void fun_f(char *fileName, char *pattern, t_allFlags *choice) {
   if (file != NULL) {
     while (fgets(arr_str, sizeof(arr_str), file) != NULL) {
       strtok(arr_str, "\n");
-      if (arr_str != '\0') {
+      if (*arr_str != '\0') {
         countWord += 1;
       }
       if (countWord > 1) {
